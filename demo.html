@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/Users/rachel/website/demo.css">
+  <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
+
+</head>
+
+<body>
+
+  <div class="debug">
+    <label><input type="checkbox"> Debug</label>
+  </div>
+
+  <div class="parallax">
+    <div id="group1" class="parallax__group">
+      <div class="parallax__layer parallax__layer--base img-responsive">
+      </div>
+      <div class="parallax__layer parallax__layer--fore">
+
+        <div class="container">
+          <div class="content">
+            <h2>Thrifting is cool.</h2>
+            <p>Whether you're fashion-forward, on a tight budget, environmentally conscious, or opposed to human trafficking, buying clothes and other goods secondhand will benefit you, our fellow humans, and our environment.</p> 
+          </div>
+          <p id="learn-how">Learn how <i class="fa fa-chevron-down"></i></p>
+        </div>
+      </div>
+    </div>
+    <div id="group2" class="parallax__group">
+      <!--<div class="parallax__layer parallax__layer--base">
+        <div class="title">Base Layer</div>
+      </div>-->
+      <div class="parallax__layer parallax__layer--back img-responsive">
+        <div class="list-item">1. Buying secondhand benefits <strong>the environment</strong></div>
+      </div>
+    </div>
+
+    <div id="group3" class="parallax__group">
+      <div class="parallax__layer parallax__layer--base">
+        <div class="content">
+          <p>The textile industry produces toxic waste, which creates extreme <a href="http://www.sciencedirect.com/science/article/pii/S0959652698000134">air</a> and <a href="http://www.ipe.org.cn/Upload/Report-Textiles-One-EN.pdf">water</a> pollution.</p>
+          <p>Cotton farming accounts for <a href="http://www.panna.org/resources/cotton">25% of insecticide usage</a> worldwide. Cotton farmers use many of the most harmful pesticides on the market, which endanger the farmworkers, wildlife, water supplies, and the environment.</p>
+        </div>
+      </div>
+        
+    </div>
+
+    <div id="group4" class="parallax__group">
+      <div class="parallax__layer parallax__layer-fore">
+      <div class="content">
+        <div class="title">fore layer</div>
+      </div>
+
+      <div class="parallax__layer parallax__layer--base">
+        <div class="title">Base Layer
+           <p>Although there are <a href="http://www.greenpeace.org/international/en/campaigns/toxics/detox/">campaigns</a> to increase regulation and fight pollution, the easiest way to individually contribute is to buy less.</p></div>
+      </div>
+      <div class="parallax__layer parallax__layer--back">
+        <div class="title"></div>
+      </div>
+      <div class="parallax__layer parallax__layer--deep">
+        <div class="title">Deep Background Layer</div>
+      </div>
+    </div>
+
+    <div id="group5" class="parallax__group">
+      <div class="parallax__layer parallax__layer--fore">
+        <div class="title">Foreground Layer</div>
+      </div>
+      <div class="parallax__layer parallax__layer--base">
+        <div class="title">Base Layer</div>
+      </div>
+    </div>
+
+    <div id="group6" class="parallax__group">
+      <div class="parallax__layer parallax__layer--back">
+        <div class="title">Background Layer</div>
+      </div>
+      <div class="parallax__layer parallax__layer--base">
+        <div class="title">Base Layer</div>
+      </div>
+    </div>
+
+    <div id="group7" class="parallax__group">
+      <div class="parallax__layer parallax__layer--base">
+        <div class="title">Base Layer</div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    var debugInput = document.querySelector("input");
+    function updateDebugState() {
+        document.body.classList.toggle('debug-on', debugInput.checked);
+    }
+    debugInput.addEventListener("click", updateDebugState);
+    updateDebugState();
+  </script>
+
+  <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-10812217-3']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+  </script> 
+</body>
+</html>
