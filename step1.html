@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<head>
+<link rel="stylesheet" href="/Users/rachel/thrift/simple.css">
+
+</head>
+
+<body>
+  <div class="debug">
+    <label><input type="checkbox"> Debug</label>
+  </div>
+
+  <div class="parallax">
+    <div id="first" class="parallax__group">
+      <div class="parallax__layer parallax__layer--back">
+        <p>This is the background</p>
+      </div>
+
+      <div class="parallax__layer parallax__layer--base">
+        <p>This is the main event!</p>
+      </div>
+
+      <div class="parallax__layer parallax__layer--deep">
+        <p>This is the deep, deep background.</p>
+      </div>
+    </div>
+
+    <div id="second" class="parallax__group">
+      <div class="parallax__layer parallax__layer--back">
+        <p>...background part 2...</p>
+      </div>
+      <div class="parallax__layer parallax__layer--base">
+      <p><strong>FORE</strong> ground!</p>
+      </div>
+      <div id="deep" class="parallax__layer parallax__layer--deep">
+        <p>IN THE BACKGROUND</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    var debugInput = document.querySelector("input");
+    function updateDebugState() {
+        document.body.classList.toggle('debug-on', debugInput.checked);
+    }
+    debugInput.addEventListener("click", updateDebugState);
+    updateDebugState();
+  </script>
+
+  <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-10812217-3']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+  </script> 
+</body>
